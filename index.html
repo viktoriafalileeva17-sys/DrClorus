@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инфографика: Запуск и Продвижение на Маркетплейсах</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 250px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 320px;
+            }
+        }
+        .kpi-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            border-left: 4px solid;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-3xl md:text-5xl font-extrabold text-[#073B4C] mb-2">Запуск и Продвижение на Маркетплейсах</h1>
+            <p class="text-lg md:text-xl text-[#118AB2] font-semibold">Визуальный гид по стратегии успеха от Школы Бизнеса МБМ</p>
+            <p class="mt-2 text-sm text-gray-500">Онлайн-поток: 20.10.2025-24.10.2025</p>
+        </header>
+
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <div class="lg:col-span-3 bg-white p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold text-[#073B4C] mb-4">1. Первые продажи: Стратегия "Холодного старта"</h2>
+                <p class="text-gray-600 mb-6">Первоочередная задача — преодолеть недоверие покупателей к новому товару без отзывов. Это достигается за счет агрессивной ценовой политики и контролируемого создания первоначального рейтинга. Ниже показано сравнение плановой розничной цены и специальной цены запуска, которая стимулирует первые покупки.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div class="flex flex-col space-y-4">
+                        <div class="kpi-card" style="border-color: #FF6B6B;">
+                            <h4 class="text-gray-500 text-sm font-semibold">Плановая РРЦ</h4>
+                            <p class="text-3xl font-bold text-[#073B4C]">1 500 руб.</p>
+                        </div>
+                        <div class="kpi-card" style="border-color: #06D6A0;">
+                            <h4 class="text-gray-500 text-sm font-semibold">Цена Запуска</h4>
+                            <p class="text-3xl font-bold text-[#073B4C]">1 100 руб.</p>
+                        </div>
+                        <div class="kpi-card" style="border-color: #FFD166;">
+                            <h4 class="text-gray-500 text-sm font-semibold">Цель по отзывам</h4>
+                            <p class="text-3xl font-bold text-[#073B4C]">5-7 шт. (Рейтинг 4.8+)</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="chart-container">
+                            <canvas id="launchPriceChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 bg-white p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold text-[#073B4C] mb-4">2. Продвижение: Воронка рекламной кампании и ДРР</h2>
+                <p class="text-gray-600 mb-6">После подготовки карточки товара ключевым фактором успеха становится платное продвижение. Эффективность измеряется через воронку: от показов к кликам (CTR) и, наконец, к продажам. На примере дневного бюджета в 2000 рублей, мы видим прогнозируемый результат при оптимальных показателях CTR и конверсии.</p>
+                <div class="flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0 md:space-x-4 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="w-32 h-32 rounded-full bg-[#118AB2] flex flex-col justify-center items-center text-white p-2 shadow-lg">
+                            <span class="text-3xl font-bold">10k</span>
+                            <span class="text-sm">Показов</span>
+                        </div>
+                    </div>
+                    <div class="text-4xl font-thin text-[#118AB2] transform -rotate-90 md:rotate-0">&rarr;</div>
+                    <div class="flex flex-col items-center">
+                         <div class="w-32 h-32 rounded-full bg-[#06D6A0] flex flex-col justify-center items-center text-white p-2 shadow-lg">
+                            <span class="text-3xl font-bold">150</span>
+                            <span class="text-sm">Кликов (CTR 1.5%)</span>
+                        </div>
+                    </div>
+                    <div class="text-4xl font-thin text-[#06D6A0] transform -rotate-90 md:rotate-0">&rarr;</div>
+                    <div class="flex flex-col items-center">
+                         <div class="w-32 h-32 rounded-full bg-[#FFD166] flex flex-col justify-center items-center text-white p-2 shadow-lg">
+                            <span class="text-3xl font-bold">4-5</span>
+                            <span class="text-sm">Продаж (CR 3%)</span>
+                        </div>
+                    </div>
+                </div>
+                 <p class="text-center mt-6 text-lg font-semibold text-[#073B4C]">Расчетный ДРР в примере: <span class="text-xl text-[#FF6B6B]">~29.6%</span></p>
+                 <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-4">
+                    <div class="kpi-card w-full max-w-xs" style="border-color: #FF6B6B;">
+                        <h4 class="text-gray-500 text-sm font-semibold">Целевой ДРР</h4>
+                        <p class="text-3xl font-bold text-[#FF6B6B]">До 10%</p>
+                    </div>
+                     <div class="kpi-card w-full max-w-xs" style="border-color: #118AB2;">
+                        <h4 class="text-gray-500 text-sm font-semibold">Ключ к 10% ДРР</h4>
+                        <p class="text-xl font-bold text-[#118AB2]">Повышение CTR (клик-бельность)</p>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="lg:col-span-3 bg-white p-6 rounded-xl shadow-lg">
+                 <h2 class="text-2xl font-bold text-[#073B4C] mb-4">3. Акции и скидки: Анатомия цены</h2>
+                 <p class="text-gray-600 mb-6">Управление скидками начинается с понимания структуры цены. Юнит-экономика показывает, какая доля от розничной цены уходит на себестоимость, комиссии, логистику, налоги и маркетинг (ДРР), а какая остается в виде чистой прибыли.</p>
+                 
+                 <!-- Новый блок: Стратегия ценообразования -->
+                 <div class="bg-yellow-50 p-4 rounded-lg border border-2 border-yellow-400 mb-6">
+                     <h3 class="text-xl font-bold text-[#FF6B6B] mb-2">ГЛАВНОЕ: Ценообразование и Выкупы</h3>
+                     <p class="text-gray-700">Используйте период высокой цены (2500 руб. / 14 дней) для **активных самовыкупов**. Это обеспечит **быстрый рост позиций в поиске** (т.к. цена высокая, МП вас не "задавит"), а также зафиксирует высокий максимум для будущих акций. <span class="font-semibold text-[#073B4C]">Только после этого</span> снижайте цену до 2000 руб.</p>
+                 </div>
+                 <!-- Конец нового блока -->
+                 
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div class="chart-container">
+                        <canvas id="unitEconomicsChart"></canvas>
+                    </div>
+                    <div class="flex flex-col space-y-4">
+                        <div class="kpi-card" style="border-color: #073B4C;">
+                            <h4 class="text-gray-500 text-sm font-semibold">Розничная цена (РРЦ)</h4>
+                            <p class="text-3xl font-bold text-[#073B4C]">2 000 руб.</p>
+                        </div>
+                        <div class="kpi-card" style="border-color: #FF6B6B;">
+                            <h4 class="text-gray-500 text-sm font-semibold">Точка безубыточности (Cost of Goods Sold + Fixed fees)</h4>
+                            <p class="text-3xl font-bold text-[#FF6B6B]">1 190 руб.</p>
+                        </div>
+                         <div class="kpi-card" style="border-color: #06D6A0;">
+                            <h4 class="text-gray-500 text-sm font-semibold">Плановая чистая прибыль (с учетом 10% ДРР)</h4>
+                            <p class="text-3xl font-bold text-[#06D6A0]">610 руб. (30.5%)</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="lg:col-span-3 bg-white p-6 rounded-xl shadow-lg">
+                 <h2 class="text-2xl font-bold text-[#073B4C] mb-4">4. Работа с отзывами: Влияние рейтинга на конверсию</h2>
+                 <p class="text-gray-600 mb-6">Рейтинг товара — один из самых мощных факторов, влияющих на решение о покупке. Данные показывают нелинейную зависимость: даже незначительное снижение рейтинга ниже отметки 4.8 приводит к существенной потере потенциальных продаж. Поддержание высокого рейтинга — это прямая инвестиция в стабильность бизнеса.</p>
+                <div class="chart-container h-80 md:h-96">
+                    <canvas id="ratingConversionChart"></canvas>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 bg-white p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold text-[#073B4C] mb-4">5. Итоговая сессия: План действий на первые 30 дней</h2>
+                <p class="text-gray-600 mb-8">Успешный старт требует структурированного подхода. План на первый месяц разделен на четыре недели, каждая со своими задачами и ключевыми метриками для контроля. Этот пошаговый процесс помогает сфокусироваться на самом важном на каждом этапе запуска.</p>
+                <div class="relative pl-8 border-l-2 border-[#118AB2]">
+                    <div class="mb-8">
+                        <div class="absolute w-6 h-6 bg-[#FF6B6B] rounded-full -left-3 border-4 border-white"></div>
+                        <p class="text-sm font-semibold text-[#FF6B6B]">Неделя 1</p>
+                        <h3 class="font-bold text-xl text-[#073B4C] mt-1">Подготовка и Запуск</h3>
+                        <p class="text-gray-600 mt-2">Финализация контента, проведение 5-7 контролируемых выкупов для получения первых отзывов.</p>
+                        <p class="mt-2 text-sm font-semibold text-gray-500">Метрики: Рейтинг ( > 4.8), CTR ( > 1.0%).</p>
+                    </div>
+                    <div class="mb-8">
+                        <div class="absolute w-6 h-6 bg-[#FFD166] rounded-full -left-3 border-4 border-white"></div>
+                        <p class="text-sm font-semibold text-[#FFD166]">Неделя 2</p>
+                        <h3 class="font-bold text-xl text-[#073B4C] mt-1">Тестирование Рекламы</h3>
+                        <p class="text-gray-600 mt-2">Запуск поисковой рекламы с небольшим бюджетом, тестирование 3-5 ключевых запросов, работа с первыми отзывами.</p>
+                        <p class="mt-2 text-sm font-semibold text-gray-500">Метрики: ДРР ( < 30%), CR ( > 2.0%).</p>
+                    </div>
+                    <div class="mb-8">
+                        <div class="absolute w-6 h-6 bg-[#06D6A0] rounded-full -left-3 border-4 border-white"></div>
+                        <p class="text-sm font-semibold text-[#06D6A0]">Неделя 3</p>
+                        <h3 class="font-bold text-xl text-[#073B4C] mt-1">Анализ и Корректировка</h3>
+                        <p class="text-gray-600 mt-2">Отключение неэффективных кампаний, повышение ставок на успешные ключевые слова, анализ воронки.</p>
+                        <p class="mt-2 text-sm font-semibold text-gray-500">Метрики: CPO (Стоимость заказа), Оборот.</p>
+                    </div>
+                    <div class="mb-8">
+                        <div class="absolute w-6 h-6 bg-[#118AB2] rounded-full -left-3 border-4 border-white"></div>
+                        <p class="text-sm font-semibold text-[#118AB2]">Неделя 4</p>
+                        <h3 class="font-bold text-xl text-[#073B4C] mt-1">Масштабирование</h3>
+                        <p class="text-gray-600 mt-2">Принятие решения об участии в акциях, запуск рекламы в рекомендациях, планирование поставок.</p>
+                        <p class="mt-2 text-sm font-semibold text-gray-500">Метрики: Чистая прибыль, Остатки на складе.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Контактная информация и Эксперт -->
+        <section class="mt-12 pt-8 text-center border-t border-gray-200">
+            <h2 class="text-3xl font-bold text-[#118AB2] mb-4">Связь с экспертом</h2>
+            
+            <div class="mb-6 p-4 bg-white rounded-xl shadow-lg border-b-4 border-[#FFD166] max-w-lg mx-auto">
+                <p class="text-lg font-bold text-[#073B4C]">Николай Фалилеев</p>
+                <p class="text-sm text-gray-600">Кандидат экономических наук</p>
+                <p class="text-sm font-semibold text-[#FF6B6B] mt-2">5 лет опыта на маркетплейсах</p>
+                <p class="text-sm text-gray-600">Руководитель клуба селлеров MP Seller (Санкт-Петербург)</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+                <div class="p-4 bg-white rounded-xl shadow-md border-b-4 border-[#06D6A0]">
+                    <p class="text-sm text-gray-500 font-medium">Телефон</p>
+                    <a href="tel:+79118184524" class="text-2xl font-extrabold text-[#073B4C] hover:text-[#FF6B6B] transition">
+                        +7 (911) 818-45-24
+                    </a>
+                </div>
+                 <div class="p-4 bg-white rounded-xl shadow-md border-b-4 border-[#118AB2]">
+                    <p class="text-sm text-gray-500 font-medium">Telegram</p>
+                    <a href="https://t.me/nikolfl" target="_blank" class="text-2xl font-extrabold text-[#073B4C] hover:text-[#FF6B6B] transition">
+                        @nikolfl
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="text-center mt-12 py-6 border-t">
+            <p class="text-gray-600">Инфографика подготовлена на основе материалов курса</p>
+            <p class="font-bold text-[#073B4C]">ГБУ "Малый бизнес Москвы" (МБМ)</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            const processLabel = (label) => {
+                if (label.length <= 16) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                for (const word of words) {
+                    if ((currentLine + ' ' + word).length > 16) {
+                        lines.push(currentLine);
+                        currentLine = word;
+                    } else {
+                        currentLine += (currentLine ? ' ' : '') + word;
+                    }
+                }
+                lines.push(currentLine);
+                return lines;
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            };
+            
+            const sharedChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: {
+                                family: 'Inter',
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                           title: tooltipTitleCallback
+                        },
+                        bodyFont: {
+                            family: 'Inter'
+                        },
+                        titleFont: {
+                            family: 'Inter'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        ticks: {
+                            font: {
+                                family: 'Inter'
+                            }
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: {
+                                family: 'Inter'
+                            }
+                        }
+                    }
+                }
+            };
+
+            const launchPriceCtx = document.getElementById('launchPriceChart').getContext('2d');
+            new Chart(launchPriceCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Цена товара'],
+                    datasets: [{
+                        label: 'Плановая РРЦ',
+                        data: [1500],
+                        backgroundColor: '#FF6B6B',
+                        borderColor: '#FF6B6B',
+                        borderWidth: 1
+                    }, {
+                        label: 'Цена запуска',
+                        data: [1100],
+                        backgroundColor: '#06D6A0',
+                        borderColor: '#06D6A0',
+                        borderWidth: 1
+                    }]
+                },
+                options: { ...sharedChartOptions,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) { return value + ' руб.' }
+                            }
+                        },
+                        x: { ...sharedChartOptions.scales.x }
+                    }
+                }
+            });
+
+            const unitEconomicsCtx = document.getElementById('unitEconomicsChart').getContext('2d');
+            new Chart(unitEconomicsCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: [
+                        processLabel('Плановая чистая прибыль'),
+                        processLabel('ДРР (10% от РРЦ)'),
+                        processLabel('Себестоимость (CoG)'),
+                        processLabel('Комиссия МП (21%)'),
+                        processLabel('Логистика и Хранение'),
+                        processLabel('Налог (УСН 6%)')
+                    ],
+                    datasets: [{
+                        label: 'Структура цены',
+                        data: [610, 200, 500, 420, 150, 120],
+                        backgroundColor: ['#06D6A0', '#118AB2', '#FF6B6B', '#FFD166', '#073B4C', '#FF6B6B'],
+                        hoverOffset: 4
+                    }]
+                },
+                options: { ...sharedChartOptions }
+            });
+
+            const ratingConversionCtx = document.getElementById('ratingConversionChart').getContext('2d');
+            new Chart(ratingConversionCtx, {
+                type: 'line',
+                data: {
+                    labels: ['5.0', '4.8-4.9', '4.5', 'Ниже 4.0'],
+                    datasets: [{
+                        label: 'Конверсия в покупку (CR)',
+                        data: [3.5, 3.2, 2.5, 1.0],
+                        fill: true,
+                        backgroundColor: 'rgba(255, 107, 107, 0.2)',
+                        borderColor: '#FF6B6B',
+                        tension: 0.1,
+                        pointBackgroundColor: '#FF6B6B',
+                        pointRadius: 5,
+                        pointHoverRadius: 7
+                    }]
+                },
+                options: { ...sharedChartOptions,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) { return value + '%' }
+                            }
+                        },
+                         x: { ...sharedChartOptions.scales.x }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
